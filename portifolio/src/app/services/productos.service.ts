@@ -25,4 +25,7 @@ export class ProductosService {
       }
   }
 
+  public load_product(id: string): any {
+    return this.http.get(`https://controlfsite.firebaseio.com/productos/${id}.json`)
+  }
 }
