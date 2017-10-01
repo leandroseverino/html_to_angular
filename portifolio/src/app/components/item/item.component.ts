@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { ProductosService } from './../../services/productos.service';
@@ -7,7 +7,7 @@ import { ProductosService } from './../../services/productos.service';
   selector: 'app-item',
   templateUrl: './item.component.html'
 })
-export class ItemComponent implements OnInit {
+export class ItemComponent {
 
   producto:any = {}
   id: string = undefined
@@ -20,10 +20,6 @@ export class ItemComponent implements OnInit {
         this.producto = res.json()
       })
     })
-
   }
 
-  ngOnInit() {
-    
-  }
 }
