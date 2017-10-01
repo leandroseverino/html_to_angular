@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AboutService } from './../../services/about.service';
 
 @Component({
   selector: 'app-about',
@@ -6,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-  constructor() { }
+  constructor(public aboutService:AboutService) { }
 
 }
